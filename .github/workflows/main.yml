@@ -31,11 +31,11 @@ jobs:
     # Yarn command
          cmd: install #npm install / yarn install
          
-        -name: Creating build
-        run: yarn build
+    -name: Creating build
+    run: yarn build
     
   -name: install surge run
-run: npm install -g surge
+  run: npm install -g surge
      
 -name: deploying on surge 
 run: surge ./build https://bootcam_session2.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
