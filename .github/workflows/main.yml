@@ -37,7 +37,7 @@ jobs:
   -name: install surge run
 run: npm install -g surge
      
-  -name: deploying on surge 
+-name: deploying on surge 
 run: surge ./build https://bootcam_session2.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
        
   
